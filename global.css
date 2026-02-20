@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: #eee;
+    /* Optional: Change for better visualization in landscape */
+  }
+}
