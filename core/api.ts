@@ -1,6 +1,6 @@
 import PocketBase from 'pocketbase';
 import { getLocalDay } from './utils';
-export const BASE_URL = 'https://bbadmin.fruitstone.in';
+export const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL;
 // Valid for 1 year since 16-June-2025
 export const TOKEN = process.env.EXPO_PUBLIC_TOKEN;
 // PocketBase instance
@@ -295,4 +295,3 @@ export const fetchRestaurantImages = async (): Promise<RestaurantImage[]> => {
     return [];
   }
 };
-
